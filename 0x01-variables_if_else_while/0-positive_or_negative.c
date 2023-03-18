@@ -1,12 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/* more headers goes there*/
 
 /**
-  * this is the main function
-  * return (0) upon success
+ * main - Entry point
+ *
+ * Description: 'the program's description'
+ * @parameter: describe the parameter
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
