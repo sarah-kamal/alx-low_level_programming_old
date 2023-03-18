@@ -19,7 +19,7 @@ int main(void)
 	{
 		for (d2 = d1 + 1; d2 <= 8; d2++)
 		{
-			for (d3 = d2 + 1; d3 <=9 ; d3++)
+			for (d3 = d2 + 1; d3 <= 9 ; d3++)
 			{
 				putchar(d1 + 48);
 				putchar(d2 + 48);
