@@ -19,7 +19,7 @@ int main(void)
 		if (ch == '9')
 			break;
 		putchar(',');
-		putchar(' ')
+		putchar(' ');
 		ch++;
 	}
 	putchar('\n');
