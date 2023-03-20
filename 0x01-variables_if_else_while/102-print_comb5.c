@@ -11,20 +11,32 @@ int main(void)
 {
 	int d1;
 	int d2;
-	
+	int d3;
+	int d4;
 
 	d1 = 0;
 
-	for ( ; d1 <= 98; d1++ )
+	for ( ; d1 <= 7; )
 	{
-		for ( d2 = d1 + 1; d2 <= 99; d2++ )
+		for (d2 = 0; d2 <= 8; d2++)
 		{
-			putchar( ( d1 / 10) + 48);
-			putchar( ( d1 % 10) + 48);
-			putchar(' ');
-			putchar( ( d2 / 10) + 48);
-			putchar( ( d2 % 10) + 48);
+			for (d3 = 0; d3 <= 9 ; d3++)
+			{
+				for (d4 = 1; d4 <= 9 ; d4++)
+				{
+					putchar(d1 + 48);
+					putchar(d2 + 48);
+					putchar(' ');
+					putchar(d3 + 48);
+					putchar(d4 + 48);
+					if (d1 == 9 && d2 == 8)
+						break;
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
+		d1++;
 	}
 	putchar('\n');
 	return (0);
