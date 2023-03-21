@@ -19,5 +19,4 @@ void _putchar(void)
     putchar('a');
     putchar('r');
     putchar('\n');
-    //return 0;
 }
