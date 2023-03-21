@@ -1,13 +1,13 @@
 #include<stdio.h>
-
+#include"main.h"
 /**
  *
- * print_alphabet
+ * main - Enterypoint
  * Description: prints all lowercase  followed by a new line.
  *
- * Return : void
+ * Return : 0
+ *
  */
-
 void print_alphabet(void)
 {
 	char ch;
@@ -15,4 +15,5 @@ void print_alphabet(void)
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
 	putchar('\n');
+	return (0);
 }
