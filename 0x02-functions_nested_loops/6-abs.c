@@ -1,13 +1,11 @@
-#include<stdio.h>
 #include "main.h"
 
 /**
- *int print_sign - checks if low
- * Description : checks if char is lower
- * @c (int)
- * Return : 1 (lower) , 0 otherwise
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
  */
-int _abs(int c)
+int print_sign(int c)
 {
 	if (c > 0)
 	{
