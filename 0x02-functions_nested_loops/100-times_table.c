@@ -17,16 +17,16 @@ void print_times_table(int n)
 
 	for ( ; hour <= n; hour++)
 	{
-		for (minute = 0 ; minute <= 9; minute++)
+		for (minute = 0 ; minute <= n; minute++)
 		{
 			mult = hour * minute;
 			printf("%d", mult);
-			if (minute != 9)
+			if (minute != n)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
