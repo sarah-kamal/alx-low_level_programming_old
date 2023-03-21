@@ -3,10 +3,10 @@
 
 /**
  *
- print_alphabet_x10 - Enterypoint
+ * print_alphabet_x10 - Enterypoint
  * Description: prints all lowercase  followed by a new line.
  *
- * Return : 0
+ * Return : void
  *
  */
 void print_alphabet_x10(void)
@@ -19,9 +19,9 @@ void print_alphabet_x10(void)
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		_putchar(ch);
-		if (ch == 'z' && count <= 10)
+		if (ch == 'z' && count < 10)
 		{
-			ch = 'a';
+			ch = '`';
 			count++;
 			_putchar('\n');
 		}
