@@ -16,5 +16,5 @@ int main(void)
 		if (u % 3 == 0 || u % 5 == 0)
 			sum += u;
 	}
-	puchar(u + '0');
+	putchar(u + '0');
 }
