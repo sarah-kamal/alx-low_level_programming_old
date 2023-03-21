@@ -2,31 +2,23 @@
 #include"main.h"
 
 /**
- * jack_bauer - Prints every minute of a 24-hour day in HH:MM format.
+ * print_times_table - Prints the times table for the given integer n.
  *
- * Return: None.
+ * @n: The maximum integer value to print in the times table.
  */
 void print_times_table(int n)
 {
-	int hour;
-	int minute;
-	int mult;
+    int hour, minute;
 
-	hour = 0;
-	minute = 0;
-
-	for ( ; hour <= n; hour++)
-	{
-		for (minute = 0 ; minute <= n; minute++)
-		{
-			mult = hour * minute;
-			printf("%1d", mult);
-			if (minute != n)
-			{
-				putchar(',');
-				printf("   ");
-			}
-		}
-		putchar('\n');
-	}
+    for (hour = 0; hour <= n; hour++) {
+        for (minute = 0; minute <= n; minute++) {
+            if (minute == 0) {
+                printf("%2d", hour * minute);
+            } else {
+                printf(",%3d", hour * minute);
+            }
+        }
+        printf("\n");
+    }
 }
+
