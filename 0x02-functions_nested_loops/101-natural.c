@@ -17,4 +17,5 @@ int main(void)
 			sum += u;
 	}
 	putchar(u + '0');
+	return (0);
 }
