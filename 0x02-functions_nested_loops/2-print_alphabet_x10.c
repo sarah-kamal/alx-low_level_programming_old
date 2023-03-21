@@ -2,8 +2,8 @@
 #include"main.h"
 
 /**
+ * print_alphabet_x10 - AW:wq
  *
- * print_alphabet_x10 - Enterypoint
  * Description: prints all lowercase  followed by a new line.
  *
  * Return : void
@@ -23,8 +23,9 @@ void print_alphabet_x10(void)
 		{
 			ch = '`';
 			count++;
-			_putchar('\n');
 		}
+		_putchar('\n');
+
 	}
 
 }
