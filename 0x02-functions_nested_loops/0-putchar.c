@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-void _myputchar(void)
+void main(void)
 {
     _putchar('_');
     _putchar('p');
