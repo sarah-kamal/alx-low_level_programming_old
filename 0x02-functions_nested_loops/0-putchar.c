@@ -2,7 +2,7 @@
 #include"main.h"
 
 /**
- * _putchar_t
+ * main-:Entery point
  *
  * Description: 'the program's description'
  *
@@ -11,14 +11,14 @@
 
 int main(void)
 {
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
-    return 0;
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
