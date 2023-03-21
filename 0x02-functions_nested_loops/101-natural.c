@@ -17,6 +17,6 @@ int main(void)
 		if ((u % 3 == 0) || (u % 5 == 0))
 			sum += u;
 	}
-	putchar(u + '0');
+	printf("%d\n", sum);
 	return (u);
 }
