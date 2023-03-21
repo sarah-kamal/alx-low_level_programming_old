@@ -4,7 +4,8 @@
 /**
  *_islower - checks if low
  * Description : checks if char is lower
- * Return : bool
+ * @parameters : int c
+ * Return : 1 (lower) , 0 otherwise
  */
 int _islower(int c)
 {
