@@ -7,7 +7,7 @@
  * @c (int)
  * Return : 1 (lower) , 0 otherwise
  */
-int print_sign(int n)
+int print_sign(int c)
 {
 	if (c > 0)
 	{
