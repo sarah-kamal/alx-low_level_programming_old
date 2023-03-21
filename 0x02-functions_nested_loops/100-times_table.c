@@ -20,7 +20,7 @@ void print_times_table(int n)
 		for (minute = 0 ; minute <= n; minute++)
 		{
 			mult = hour * minute;
-			printf("%d", mult);
+			printf("%2d", mult);
 			if (minute != n)
 			{
 				putchar(',');
