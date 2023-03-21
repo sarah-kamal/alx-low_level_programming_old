@@ -11,9 +11,10 @@ int main(void)
 	int sum;
 
 	sum = 0;
+
 	for (u = 0; u < 1024; u++)
 	{
-		if (u % 3 == 0 || u % 5 == 0)
+		if ((u % 3 == 0) || (u % 5 == 0))
 			sum += u;
 	}
 	putchar(u + '0');
