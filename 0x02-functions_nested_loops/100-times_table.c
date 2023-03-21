@@ -24,7 +24,7 @@ void print_times_table(int n)
 			if (minute != n)
 			{
 				putchar(',');
-				printf("\t");
+				printf("   ");
 			}
 		}
 		putchar('\n');
