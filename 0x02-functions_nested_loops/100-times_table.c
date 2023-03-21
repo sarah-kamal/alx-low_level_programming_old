@@ -15,7 +15,7 @@ void print_times_table(int n)
             if (minute == 0) {
                 printf("%2d", hour * minute);
             } else {
-                printf(",%3d", hour * minute);
+                printf(", %3d", hour * minute);
             }
         }
         printf("\n");
