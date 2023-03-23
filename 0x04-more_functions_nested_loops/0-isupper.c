@@ -3,12 +3,12 @@
 
 /**
   * int _isupper -returns if character is upper case or not
-  * 
+  *
   * Description: checks if a char is uppercase
   *
   * Return: 1 in uppercase ,  otherwise
   */
- int _isupper(int c)
+int _isupper(int c)
 {
 	if (c > 64 && c < 91)
 		return (1);
