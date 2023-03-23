@@ -20,7 +20,7 @@ void print_triangle(int n)
 		{
 			for (j = 0; j < n; j++)
 			{
-				if (j >= (n-1-i))
+				if (j >= (n - 1 - i))
 				{
 					_putchar('#');
 				}
