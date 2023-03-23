@@ -9,10 +9,10 @@ void print_diagonal(int n)
 {
 	int i;
 	int j;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
-		return;
 	}
 	else
 	{
@@ -22,12 +22,10 @@ void print_diagonal(int n)
 			{
 				if (j == i)
 					_putchar('\\');
-				else 
+				else
 					_putchar(' ');
 			}
-			_putchar('\n');
-			
+			_putchar('\n');	
 		}
 	}
-	return;
 }
