@@ -1,4 +1,5 @@
 #include"main.h"
+#include"_putchar.c"
 
 /**
  * print_line - draws a straight line in the terminal
