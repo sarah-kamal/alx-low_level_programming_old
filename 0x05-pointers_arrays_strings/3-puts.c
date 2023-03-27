@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"_putchar.c"
 
 /**
  * _puts - Prints a string to stdout
