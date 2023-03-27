@@ -1,4 +1,4 @@
-#include<iostream>
+#include<stdio.h>
 /**
  * reset_to_98 - resets the value of an integer pointed to by n to 98
  *
