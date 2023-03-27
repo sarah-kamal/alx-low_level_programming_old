@@ -24,7 +24,7 @@ void puts_half(char *str)
 	n = i;
 	for (i = 0; i < n; i++)
 	{
-		if (i >= (ciel(n / 2)))
+		if (i >= (ceil(n / 2)))
 			_putchar(*str);
 		str++;
 	}
