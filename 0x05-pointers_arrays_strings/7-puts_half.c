@@ -26,11 +26,15 @@ void puts_half(char *str)
 	for (i = 0; i < n; i++)
 	{
 		if (n % 2 == 0)
-		if (i >= (ceil(n / 2)))
-			_putchar(*str);
+		{
+			if (i >= (ceil(n / 2)))
+				_putchar(*str);
+		}
 		else
+		{
 			 if (i >= (n / 2 + 1))
- 30                         _putchar(*str);
+				 _putchar(*str);
+		}
 		str++;
 	}
 	_putchar('\n');
