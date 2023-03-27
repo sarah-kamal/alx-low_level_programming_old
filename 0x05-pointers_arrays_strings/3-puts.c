@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include "main.h"
 /**
  * _puts - Prints a string to stdout
  * @str: Pointer to string to be printed
