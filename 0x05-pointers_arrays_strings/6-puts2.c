@@ -15,7 +15,7 @@ void puts2(char *str)
 
 	i = 0;
 	temp = str;
-	while (*s != '\0')
+	while (*temp != '\0')
 	{
 		if (i % 2 == 0)
 			_putchar(*temp);
