@@ -1,4 +1,3 @@
- #include"_putchar.c"
 int _strlen(char *s);
 void reset_to_98(int *n);
 void _puts(char *str);
