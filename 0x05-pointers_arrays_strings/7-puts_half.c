@@ -24,10 +24,9 @@ void puts_half(char *str)
 	n = i;
 	for (i = 0; i < n; i++)
 	{
-		if (i >= (n / 2 + 1))
+		if (i >= (ciel(n / 2))
 			_putchar(*str);
 		str++;
 	}
 	_putchar('\n');
 }
-		
