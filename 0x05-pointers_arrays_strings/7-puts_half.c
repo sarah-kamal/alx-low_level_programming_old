@@ -32,7 +32,7 @@ void puts_half(char *str)
 		}
 		else
 		{
-			 if (i >= (n / 2 + 1))
+			if (i >= (n / 2 + 1))
 				 _putchar(*str);
 		}
 		str++;
