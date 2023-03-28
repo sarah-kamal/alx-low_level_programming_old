@@ -49,7 +49,11 @@ int _atoi(char *s)
 	if (numfound)
 	{
 		for ( ; index < index + count; index++)
-			number += s[index] * pow(10,count - 1);
+		{
+			for (c = 0; c < count - 1; c++)
+				s[index] *= 10;
+			number += s[index];
+		}
 		if (isneg)
 			number *= -1;
 	}
