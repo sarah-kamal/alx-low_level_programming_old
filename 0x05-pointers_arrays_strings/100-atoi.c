@@ -50,6 +50,7 @@ int _atoi(char *s)
 	{
 		for ( ; index < index + count; index++)
 		{
+			s[index] = s[index] - '0';
 			for (c = 0; c < count - 1; c++)
 				s[index] *= 10;
 			number += s[index];
