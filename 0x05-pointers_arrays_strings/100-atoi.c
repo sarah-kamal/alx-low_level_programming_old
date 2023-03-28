@@ -17,6 +17,7 @@ int _atoi(char *s)
 	int count;
 	int c;
 	int number;
+	int n;
 
 	c = 0;
 	isneg = 0;
@@ -36,6 +37,7 @@ int _atoi(char *s)
 				numfound = 1;
 				cont = 1;
 				index = c;
+				count++;
 			}
 			else if (cont)
 				count++;
@@ -50,15 +52,20 @@ int _atoi(char *s)
 	{
 		for ( ; index < index + count; index++)
 		{
-			s[index] = s[index] - '0';
+			n = s[index] - '0';
 			for (c = 0; c < count - 1; c++)
-				s[index] *= 10;
-			number += s[index];
+				n *= 10;
+			number += n;
 		}
 		if (isneg)
 			number *= -1;
+		return (number);
 	}
-	return (number);
+	else
+	{
+		return (0);
+	}
+
 }
 
 
