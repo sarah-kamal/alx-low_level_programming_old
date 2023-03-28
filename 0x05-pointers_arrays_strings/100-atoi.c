@@ -23,7 +23,7 @@ int _atoi(char *s)
 	numfound = 0;
 	cont = 0;
 	count = 0;
-	while (s[c])
+	while (s[c] != '\0')
 	{
 		if (s[c] == '-')
 			isneg = 1;
