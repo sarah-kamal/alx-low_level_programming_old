@@ -1,4 +1,4 @@
-#include<main.h>
+#include"main.h"
 /**
  * _strncat - concatenates two strings
  *
@@ -20,9 +20,12 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (i = 0; i < n; i++)
 	{
+		if (*src != '\0')
+		{
 		*ptr = *src;
 		ptr++;
 		src++;
+		}
 	}
 	*ptr = '\0';
 	return (dest);
