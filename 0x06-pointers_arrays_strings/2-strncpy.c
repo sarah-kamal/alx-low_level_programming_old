@@ -1,4 +1,5 @@
-#include"main.h"
+#include "main.h"
+
 /**
  *_strncpy - function that copies a string
  *
@@ -10,26 +11,16 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-	int s_len;
-	int d_len;
+int i;
 
-	d_len = 0;
-	s_len = 0;
-	while (dest[d_len] != '\0')
+	for (i = 0; i < n && *(src + i); i++)
 	{
-		d_len++;
+		*(dest + i) = *(src + i);
 	}
-	while (src[s_len] != '\0')
+	for (; i < n; i++)
 	{
-		s_len++;
+	*(dest + i) = '\0';
 	}
-	if (n > s_len)
-		n = s_len + 1;
-	for (i = 0; i < n; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[d_len + 1] = '\0';
 	return (dest);
+
 }
