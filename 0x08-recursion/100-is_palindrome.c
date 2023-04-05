@@ -1,6 +1,7 @@
 #include"main.h"
 int ispali(char *s, int i);
 int _strlen_recursion(char *s);
+int ispali(char *s, int lenght, int i);
 /**
  * is_palindrome - checks if a string is a palindrome
  * @s: string to reverse
@@ -42,7 +43,7 @@ int _strlen_recursion(char *s)
  */
 int ispali(char *s, int lenght, int i)
 {
-	if (i == lenght / 2 + 1)
+	if (i >= lenght / 2 + 1)
 		return (1);
 	if (*(s + i) == *(s + lenght - i))
 		return (ispali(s, lenght, i + 1));
