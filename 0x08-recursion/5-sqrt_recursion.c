@@ -30,5 +30,5 @@ int sqrtr(int n, int i)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	sqrtr(n, i + 1);
+	return(sqrtr(n, i + 1));
 }
