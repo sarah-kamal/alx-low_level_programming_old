@@ -10,13 +10,14 @@ int ispali(char *s, int lenght, int i);
 int is_palindrome(char *s)
 {
 	int i;
+	int lenght;
 
 	i = 0;
 	if (*s == '\0')
 	{
 		return (1);
 	}
-	i = _strlen_recursion(s);
+	lenght = _strlen_recursion(s);
 	return(ispali(s, lenght, i));
 }
 
