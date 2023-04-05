@@ -47,7 +47,7 @@ int ispali(char *s, int lenght, int i)
 		return (1);
 	if (lenght % 2 != 0 && i == lenght / 2)
 		return (1);
-	if (*(s + i) == *(s + lenght - i))
+	if (*(s + i) == *(s + lenght - 1 - i))
 		return (ispali(s, lenght, i + 1));
 	return (0);
 }
