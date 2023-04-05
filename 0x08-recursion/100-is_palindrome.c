@@ -1,5 +1,4 @@
 #include"main.h"
-int ispali(char *s, int i);
 int _strlen_recursion(char *s);
 int ispali(char *s, int lenght, int i);
 /**
