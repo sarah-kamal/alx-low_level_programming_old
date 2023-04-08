@@ -7,12 +7,17 @@
   */
 int main(int argc, char *argv[])
 {
+	int mul;
+
 	if (argc < 3)
 	{
 		printf("ERROR\n");
 		return (1);
 	}
 	else
-		printf("%d\n", argv[1] * argv[2]);
+	{
+		mul = (argv[1][0] - 48) * (argv[2][0] - 48);
+		printf("%d\n", mul);
+	}
 	return (0);
 }
