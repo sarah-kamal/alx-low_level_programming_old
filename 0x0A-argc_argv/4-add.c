@@ -1,11 +1,11 @@
 #include<stdio.h>
 /**
   * main - adds all positive nums
-  * @argc: num of args 
+  * @argc: num of args
   * @argv: args names
   * Return: 0
   */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	int j;
