@@ -7,7 +7,7 @@
  */
 void free_dog(dog_t *d)
 {
-	char * c;
+	char *c;
 
 	if (d)
 	{

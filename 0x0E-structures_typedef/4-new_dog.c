@@ -22,10 +22,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	ownerr = malloc(sizeof(owner) + 1);
 	if (!ownerr)
+	{
+		free(namee);
 		return (NULL);
+	}
 	doggy = malloc(sizeof(dog_t));
 	if (!doggy)
+	{
+		free(namee);
+		free(ownerr);
 		return (NULL);
+	}
 	i = 0;
 	while (name[i] != '\0')
 	{
