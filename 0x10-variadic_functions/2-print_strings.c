@@ -19,7 +19,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (!s)
 		{
 			s = malloc(sizeof("nil") + 1);
-			s = "nil" + '\0';
+			s[0] = 'n';
+			s[1] = 'i';
+			s[2] = 'l';
+			s[3] = '\0';
 		}
 		if (i == n - 1)
 			printf("%s\n", s);
