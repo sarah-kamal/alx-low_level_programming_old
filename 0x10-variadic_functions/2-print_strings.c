@@ -18,11 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		s = va_arg(args, char *);
 		if (!s)
 		{
-			s = malloc(sizeof("nil") + 1);
-			s[0] = 'n';
-			s[1] = 'i';
-			s[2] = 'l';
-			s[3] = '\0';
+			s = "nil";
 		}
 		if (i == n - 1)
 			printf("%s\n", s);
