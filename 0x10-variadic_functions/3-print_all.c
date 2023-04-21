@@ -28,6 +28,8 @@ void print_all(const char * const format, ...)
 			flag = 1;
 			break;
 		case 's':
+			if (!s)
+				s = "(nil)";
 			 printf("%s", va_arg(args, char *));
 			 flag = 1;
 			 break;
@@ -40,7 +42,7 @@ void print_all(const char * const format, ...)
 			 break;
 		}
 		if (flag && i != n - 1)
-			printf (", ");
+			printf(", ");
 		i++;
 	}
 	printf("\n");
