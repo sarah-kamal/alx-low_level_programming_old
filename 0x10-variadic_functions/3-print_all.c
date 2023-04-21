@@ -8,8 +8,9 @@
 void print_all(const char * const format, ...)
 {
 	unsigned int n, i;
-	va_list(args);
 	int flag;
+	char *s;
+	va_list(args);
 
 	i = 0;
 	va_start(args, format);
@@ -28,9 +29,10 @@ void print_all(const char * const format, ...)
 			flag = 1;
 			break;
 		case 's':
+			s = va_arg(args, char *);
 			if (!s)
 				s = "(nil)";
-			 printf("%s", va_arg(args, char *));
+			 printf("%s", s);
 			 flag = 1;
 			 break;
 		case 'f':
