@@ -1,8 +1,8 @@
+#ifndef list
+#define list
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#ifndef list
-#define list
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -17,6 +17,6 @@ typedef struct list_s
     unsigned int len;
     struct list_s *next;
 } list_t;
-#endif
 size_t list_len(const list_t *h);
 size_t print_list(const list_t *h);
+#endif
