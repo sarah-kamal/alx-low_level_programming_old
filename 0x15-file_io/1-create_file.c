@@ -9,11 +9,11 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	char *buff;
-	ssize_t o, r, w;
+	ssize_t o, w ,len;
+
 	if (filename == NULL)
 		return (-1);
-	w = strlen(text_content);
+	len = strlen(text_content);
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	w = write(o, text_content, len);
 

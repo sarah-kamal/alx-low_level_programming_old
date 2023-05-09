@@ -1,3 +1,5 @@
+#include<string.h>
+
 #include<stdlib.h>
 #include<stddef.h>
 #include <unistd.h>
