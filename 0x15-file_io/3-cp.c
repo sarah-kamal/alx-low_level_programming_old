@@ -43,5 +43,15 @@ int main(int argc, char **argv)
 		 write(STDERR_FILENO, "\n", 1);
 		 exit(99);
 	}
+	if (close(fd1) == -1)
+	{
+        	dprintf(STDERR_FILENO,"Error: Can't close fd %d\n",fd1);
+		exit(100);
+	}
+	if (close(fd0) == -1)
+	{
+		dprintf(STDERR_FILENO,"Error: Can't close fd %d\n",fd1);
+		exit(100);
+	}
 	return (0);
 }
