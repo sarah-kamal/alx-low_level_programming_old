@@ -36,7 +36,7 @@ int main(int argc, char **argv)
  		exit(98);
 	}
 	w = write(fp1, buffer, r);
-	if (w == -1)
+	if (w == -1 || w != r )
 	{
 		 write(STDERR_FILENO, "Error: Can't write to ", strlen("Error: Can't write to "));
 		 write(STDERR_FILENO, argv[2], strlen(argv[2]));
