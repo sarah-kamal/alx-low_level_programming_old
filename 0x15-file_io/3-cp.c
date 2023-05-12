@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		write(STDERR_FILENO, "\n", 1);
 		exit(98);
 	}
-	fp1 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC);
+	fp1 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 664);
 	if (fp1 == -1)
 	{
 		 write(STDERR_FILENO, "Error: Can't write to ", strlen("Error: Can't write to "));
