@@ -27,21 +27,24 @@ int main(int argc, char **argv)
 		 write(STDERR_FILENO, "\n", 1);
 	 	 exit(99);
 	}
-	r = read(fp0, buffer, 1024);
-	if (r == -1)
+	while (r != 0)
 	{
-		write(STDERR_FILENO, "Error: Can't read from file ", strlen("Error: Can't read from file "));
-		write(STDERR_FILENO, argv[1], strlen(argv[1]));
-		write(STDERR_FILENO, "\n", 1);
- 		exit(98);
-	}
-	w = write(fp1, buffer, r);
-	if (w == -1 || w != r )
-	{
-		 write(STDERR_FILENO, "Error: Can't write to ", strlen("Error: Can't write to "));
-		 write(STDERR_FILENO, argv[2], strlen(argv[2]));
-		 write(STDERR_FILENO, "\n", 1);
-		 exit(99);
+		r = read(fp0, buffer, 1024);
+		if (r == -1)
+		{
+			write(STDERR_FILENO, "Error: Can't read from file ", strlen("Error: Can't read from file "));
+			write(STDERR_FILENO, argv[1], strlen(argv[1]));
+			write(STDERR_FILENO, "\n", 1);
+ 			exit(98);
+		}
+		w = write(fp1, buffer, r);
+		if (w == -1 || w != r )
+		{
+			 write(STDERR_FILENO, "Error: Can't write to ", strlen("Error: Can't write to "));
+			 write(STDERR_FILENO, argv[2], strlen(argv[2]));
+			 write(STDERR_FILENO, "\n", 1);
+			 exit(99);
+		}
 	}
 	if (close(fp1) == -1)
 	{
